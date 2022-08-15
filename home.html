@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - CP Bank LTD.</title>
+  <link rel="shortcut icon" href="img/cp-bank-icon.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mx-auto mt-3">
+    <div class="row bg-cyan-900 flex flex-col items-center gap-4 p-5 rounded-xl mx-10 transaction-container">
+        <img src="img/cp-bank-logo.png" alt=""><span class="text-3xl font-bold text-amber-600 uppercase">CP Bank Limited</span>
+        <!-- Deposit, Withdraw and Balace Section -->
+        <div class="row flex flex-row gap-10 mb-6">
+          <div class="deposit bg-lime-600 p-6 rounded-xl text-white">
+            <h3 class="text-4xl">Deposit</h3>
+            <h1 class="text-6xl">$<span id="deposit-amount">90</span></h1>
+          </div>
+          <div class=" bg-rose-500 p-6 rounded-xl text-white">
+            <h3 class="text-4xl">Withdraw</h3>
+            <h1 class="text-6xl">$<span id="withdraw-amount">25</span></h1>
+          </div>
+          <div class=" bg-purple-700 p-6 rounded-xl text-white">
+            <h3 class="text-4xl">Balance</h3>
+            <h1 class="text-6xl">$<span id="balance-amount">450</span></h1>
+          </div>
+        </div>
+        <!-- Depost and Withdraw input section -->
+        <div class="row flex flex-row gap-10 mb-6">
+          <div class="deposit bg-pink-500 p-6 rounded-xl">
+            <h3 class="text-4xl text-white">Please Deposit</h3>
+            <input type="text" id="deposit-field" placeholder="$ Amount You want to Deposit" class="p-3 my-3 rounded w-full font-semibold">
+            <button id="deposit-btn" class="p-3 rounded w-1/2 bg-indigo-700 font-bold text-white uppercase">Deposit</button>
+          </div>
+          <div class="deposit bg-blue-600 p-6 rounded-xl">
+            <h3 class="text-4xl text-white">Please Withdraw</h3>
+            <input type="digit" id="withdraw-field" placeholder="$ Amount You want to Withdraw" class="p-3 my-3 rounded w-full font-semibold">
+            <button id="withdraw-btn" class="p-3 rounded w-1/2 bg-indigo-700 font-bold text-white uppercase">Withdraw</button>
+          </div>
+        </div>
+    </div>
+</div>
+<script src="transaction.js"></script>
+</body>
+</html>

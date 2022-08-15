@@ -1,0 +1,10 @@
+body{
+    background-image: url(img/login.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+.transaction-container, .login-container{
+    --tw-bg-opacity: 0.8!important;
+}
